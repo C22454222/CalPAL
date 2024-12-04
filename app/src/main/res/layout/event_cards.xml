@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:elevation="4dp"
+    android:layout_margin="8dp">
+
+    <!-- Left Border (Vertical) -->
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#CCCCCC" />
+
+    <!-- Content Section (Event Card) -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"> <!-- Added gravity to center the content -->
+
+        <!-- Top Border -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCCCCC" />
+
+        <!-- Event Name -->
+        <TextView
+            android:id="@+id/tvEventName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/event_name1"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:gravity="center" /> <!-- Center text -->
+
+        <!-- Event Date -->
+        <TextView
+            android:id="@+id/tvEventDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/event_date"
+            android:textSize="25sp"
+            android:layout_marginBottom="4dp"
+            android:gravity="center" /> <!-- Center text -->
+
+        <!-- Event Time -->
+        <TextView
+            android:id="@+id/tvEventTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time_10_00_am"
+            android:textSize="25sp"
+            android:layout_marginBottom="4dp"
+            android:gravity="center" /> <!-- Center text -->
+
+        <!-- Event Location -->
+        <TextView
+            android:id="@+id/tvEventLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/location_sample_location"
+            android:textSize="25sp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center" /> <!-- Center text -->
+
+        <!-- Remove Button -->
+        <Button
+            android:id="@+id/btnRemoveEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/remove"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="8dp"
+            android:textSize="25sp"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:layout_gravity="center" /> <!-- Center button -->
+
+        <!-- Bottom Border -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCCCCC" />
+    </LinearLayout>
+
+    <!-- Right Border (Vertical) -->
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#CCCCCC" />
+
+</LinearLayout>
+

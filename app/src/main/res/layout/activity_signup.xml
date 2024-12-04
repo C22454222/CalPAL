@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/textView_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_up1"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal" />
+
+    <EditText
+        android:id="@+id/editText_firstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:hint="@string/first_name2"
+        android:inputType="textPersonName"
+        android:padding="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="12dp"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/editText_lastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:hint="@string/last_name2"
+        android:inputType="textPersonName"
+        android:padding="16dp"
+        android:layout_marginBottom="12dp"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/editText_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:hint="@string/email2"
+        android:inputType="textEmailAddress"
+        android:padding="16dp"
+        android:layout_marginBottom="12dp"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/editText_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:hint="@string/username3"
+        android:inputType="text"
+        android:padding="16dp"
+        android:layout_marginBottom="12dp"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/editText_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:hint="@string/password3"
+        android:inputType="textPassword"
+        android:padding="16dp"
+        android:layout_marginBottom="24dp"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/button_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_up3"
+        android:padding="16dp"
+        android:backgroundTint="#1976D2"
+        android:layout_marginBottom="24dp"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/textView_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/already_have_an_account_log_in"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="25sp" />
+
+    <!-- Copyright Text -->
+    <TextView
+        android:id="@+id/textView_copyright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/_2024_chris_and_aimee"
+        android:textSize="20sp" />
+</LinearLayout>

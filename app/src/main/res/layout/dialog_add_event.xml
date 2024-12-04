@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Event Name Input -->
+    <EditText
+        android:id="@+id/eventName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:hint="@string/event_name"
+        android:textSize="25sp"
+        android:inputType="textPersonName"
+        android:padding="16dp"
+  />
+
+    <!-- Event Time Input -->
+    <EditText
+        android:id="@+id/eventTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:hint="@string/event_time_e_g_10_00_am"
+        android:textSize="25sp"
+        android:inputType="time"
+        android:padding="16dp"
+       />
+
+    <!-- Event Location Input -->
+    <EditText
+        android:id="@+id/eventLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:hint="@string/event_location"
+        android:textSize="25sp"
+        android:inputType="text"
+        android:padding="16dp"
+        />
+
+    <!-- Save Event Button -->
+    <Button
+        android:id="@+id/saveEvent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/save_event"
+        android:textSize="25sp"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#1976D2"
+        android:padding="10dp"/>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.CalPAL" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:fontFamily">@font/patrick_hand</item>
+    </style>
+
+    <!-- Custom CalendarView Weekday Text Style -->
+    <style name="CalendarWeekdayTextStyle" parent="android:TextAppearance">
+        <item name="android:textSize">25sp</item>
+    </style>
+
+    <!-- Custom CalendarView Date Text Style -->
+    <style name="CalendarDateTextStyle" parent="android:TextAppearance">
+        <item name="android:textSize">17sp</item>
+    </style>
+</resources>

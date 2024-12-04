@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Root layout for the login screen -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Title TextView -->
+    <TextView
+        android:id="@+id/textView_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/calpal_app"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <!-- Logo ImageView -->
+    <ImageView
+        android:id="@+id/imageView_logo"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_below="@+id/textView_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/ic_launcher_round" />
+
+    <!-- Username EditText -->
+    <EditText
+        android:id="@+id/editText_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView_logo"
+        android:layout_marginTop="30dp"
+        android:autofillHints=""
+        android:minHeight="72dp"
+        android:hint="@string/username"
+        android:textSize="25sp"
+        android:inputType="text" />
+
+    <!-- Password EditText -->
+    <EditText
+        android:id="@+id/editText_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_username"
+        android:layout_marginTop="16dp"
+        android:autofillHints=""
+        android:minHeight="72dp"
+        android:hint="@string/password"
+        android:textSize="25sp"
+        android:inputType="textPassword" />
+
+    <!-- Login Button -->
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_password"
+        android:layout_marginTop="32dp"
+        android:text="@string/login"
+        android:backgroundTint="#1976D2"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:padding="16dp" />
+
+    <!-- Sign Up TextView -->
+    <TextView
+        android:id="@+id/textView_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/don_t_have_an_account_sign_up"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="25sp"
+        android:padding="16dp" />
+
+    <!-- Copyright Text -->
+    <TextView
+        android:id="@+id/textView_copyright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:text="@string/_2024_chris_and_aimee"
+        android:textSize="20sp" />
+</RelativeLayout>
